@@ -3,6 +3,7 @@
   import ContactView from "@/views/ContactView.vue"
   import PictureView from "@/views/PictureView.vue"
   import ProductView from "@/views/ProductView.vue"
+  import VFooter from '@/components/shared/VFooter.vue'
 
   export default {
     name: "app",
@@ -10,7 +11,8 @@
       HomeView,
       ContactView,
       PictureView,
-      ProductView
+      ProductView,
+      VFooter
     },
     data() {
       return {
@@ -76,6 +78,8 @@
   <keep-alive>
     <component :is="component" />
   </keep-alive>
+  <VFooter/>
+
   <a href="#" @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
   <div class="bth-navinator">
     <a href="tel:0931604585" aria-label="phone">

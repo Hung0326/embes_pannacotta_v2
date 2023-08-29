@@ -1,6 +1,3 @@
-<script setup>
-  import Footer from '@/components/shared/Footer.vue'
-</script>
 <template>
   <div class="jumbotron jumbotron-fluid page-header page-header-a mb-0">
     <div class="container text-center py-5">
@@ -72,8 +69,6 @@
       </div>
     </div>
   </div>
-
-  <Footer/>
 </template>
 <style scope>
   body {

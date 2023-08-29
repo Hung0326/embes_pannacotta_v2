@@ -1,9 +1,6 @@
 <script>
-  import Footer from '@/components/shared/Footer.vue'
-
   export default {
     name: "app",
-    components: { Footer },
     methods: {
       playIsotope() {
       (function ($) {
@@ -124,7 +121,6 @@
       </div>
     </div>
 
-  <Footer/>
 </template>
 <style scope>
   body {

@@ -1,7 +1,6 @@
 <script setup>
   import Testimonial from '@/components/cp_home/Testimonial.vue'
   import Contact from '@/components/shared/Contact.vue'
-  import Footer from '@/components/shared/Footer.vue'
 </script>
 <template>
   <div class="jumbotron jumbotron-fluid page-header page-header-a mb-0">
@@ -21,7 +20,6 @@
 
   <Testimonial/>
   <Contact/>
-  <Footer/>
 </template>
 <style scope>
   body {
