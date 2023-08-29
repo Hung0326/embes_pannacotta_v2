@@ -22,6 +22,12 @@
         document.querySelector('.nav-item.nav-link.active').classList.remove('active')
         e.currentTarget.classList.add('active')
         this.component = `${name}View`
+      },
+      navLoadComponents(name) {
+        this.component = `${name}View`
+      },
+      scrollTop() {
+        window.scrollTo(0,0)
       }
     }
   }
@@ -65,7 +71,20 @@
   <keep-alive>
     <component :is="component" />
   </keep-alive>
+  <div class="bth-navinator">
+    <a href="tel:0931604585" aria-label="phone">
+      <span class="b-ico call"></span>
+    </a>
+    <div class="btt" aria-label="home" @click="navLoadComponents('Home')">
+      <span v-if="component === 'HomeView'" class="b-ico home-active"></span>
+      <span v-else class="b-ico home"></span>
+    </div>
+    <div class="btt" aria-label="picture" @click="navLoadComponents('Picture')">
+      <span v-if="component === 'PictureView'" class="b-ico picture-active"></span>
+      <span v-else class="b-ico picture"></span>
+    </div>
+    <div class="btt" @click="scrollTop">
+      <span class="b-ico top"></span>
+    </div>
+  </div>
 </template>
-
-<style scoped>
-</style>

@@ -1573,7 +1573,7 @@ h5 {
 
 .bth-navinator {
   position: fixed;
-  bottom: -100%;
+  bottom: 20px;
   transition: .3s;
   left: 50%;
   transform: translateX(-50%);
@@ -1584,10 +1584,10 @@ h5 {
   z-index: 200;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
 }
-.bth-navinator.active {
+/* .bth-navinator.active {
   bottom: 20px;
   transition: .3s;
-}
+} */
 .bth-navinator a,
 .bth-navinator div {
   padding: 3px 10px;
