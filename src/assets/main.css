@@ -1756,10 +1756,11 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #F195B2;
-  background: #FFFFFF;
-  border-radius: 60px;
-  font-size: 30px;
+  color: #F195B2 !important;
+  background: #FFFFFF !important;
+  border-radius: 60px !important;
+  font-size: 30px !important;
+  outline: none !important;
 }
 .bg-raspberry {
   background-color: #b01212;
