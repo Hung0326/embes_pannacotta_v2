@@ -28,6 +28,11 @@
       },
       scrollTop() {
         window.scrollTo(0,0)
+      },
+      toHome() {
+        document.querySelector('.nav-item.nav-link.active').classList.remove('active')
+        this.component = 'HomeView'
+        document.getElementById('Top0106').classList.add('active')
       }
     }
   }
@@ -43,7 +48,7 @@
   <header class="container-fluid position-relative nav-bar p-0">
     <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
       <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0 navbar_v2">
-        <a href="/" class="navbar-brand d-block d-lg-none">
+        <a @click="toHome" class="navbar-brand d-block d-lg-none">
           <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" aria-label="menu" data-target="#navbarCollapse">
@@ -51,10 +56,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">
-            <a @click="loadComponents('Home', $event)" class="nav-item nav-link active" role="button">Trang Chủ</a>
+            <a @click="loadComponents('Home', $event)" class="nav-item nav-link active" id="Top0106" role="button">Trang Chủ</a>
             <a @click="loadComponents('Product', $event)" class="nav-item nav-link" role="button">Sản Phẩm</a>
           </div>
-          <a href="/" class="navbar-brand mx-5 d-none d-lg-block">
+          <a @click="toHome('Home')" class="navbar-brand mx-5 d-none d-lg-block">
             <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
           </a>
           <div class="navbar-nav mr-auto py-0">
@@ -71,6 +76,7 @@
   <keep-alive>
     <component :is="component" />
   </keep-alive>
+  <a href="#" @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
   <div class="bth-navinator">
     <a href="tel:0931604585" aria-label="phone">
       <span class="b-ico call"></span>

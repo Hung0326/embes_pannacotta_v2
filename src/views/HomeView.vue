@@ -4,9 +4,7 @@
   import Product from '@/components/cp_home/Product.vue'
   import Testimonial from '@/components/cp_home/Testimonial.vue'
   import Contact from '@/components/shared/Contact.vue'
-  import Footer from '@/components/shared/Footer.vue'
-  import ScrollTop from '@/components/shared/ScrollTop.vue'
-  
+  import Footer from '@/components/shared/Footer.vue'  
 </script>
 
 <template>
@@ -16,5 +14,4 @@
   <Testimonial/>
   <Contact/>
   <Footer/>
-  <ScrollTop/>
 </template>

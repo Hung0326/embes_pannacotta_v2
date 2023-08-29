@@ -5,8 +5,9 @@ import App from './App.vue'
 import router from './router'
 
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
-import 'owl.carousel';
 import '../node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel'
+import '../node_modules/isotope-layout/dist/isotope.pkgd.min.js'
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 100) {
@@ -16,13 +17,6 @@ $(window).scroll(function () {
   }
 });
 
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 200) {
-//     document.querySelector('.bth-navinator').classList.add('active')
-//   } else {
-//     document.querySelector('.bth-navinator').classList.remove('active')
-//   }
-// });
 
 const app = createApp(App)
 
