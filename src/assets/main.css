@@ -1311,7 +1311,7 @@ h5 {
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Banh-panna-cotta.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/Banh-panna-cotta.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -1401,7 +1401,7 @@ h5 {
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(../fonts/fa-brands-400.woff2) format("woff2");
+  src: url(./fonts/fa-brands-400.woff2) format("woff2");
   font-display: swap;
 }
 .fab {
@@ -1413,7 +1413,7 @@ h5 {
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(../fonts/fa-solid-900.woff2) format("woff2");
+  src: url(./fonts/fa-solid-900.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -1604,25 +1604,25 @@ h5 {
 }
 
 .b-ico.call {
-  background-image: url(../img/icons/phone.png);
+  background-image: url(./images/icons/phone.png);
 }
 
 .b-ico.home {
-  background-image: url(../img/icons/home.png);
+  background-image: url(./images/icons/home.png);
 }
 .b-ico.home-active {
-  background-image: url(../img/icons/home-active.png);
+  background-image: url(./images/icons/home-active.png);
 }
 .b-ico.top {
-  background-image: url(../img/icons/top.png);
+  background-image: url(./images/icons/top.png);
 }
 
 .b-ico.picture {
-  background-image: url(../img/icons/picture.png);
+  background-image: url(./images/icons/picture.png);
 }
 
 .b-ico.picture-active {
-  background-image: url(../img/icons/picture-active.png);
+  background-image: url(./images/icons/picture-active.png);
 }
 
 .btn-play.b {
@@ -2903,19 +2903,19 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 .flaticon-ingredient {
-  background-image: url(../img/icons/milk-64.png);
+  background-image: url(./images/icons/milk-64.png);
 }
 .flaticon-gift {
-  background-image: url(../img/icons/gift-64.png);
+  background-image: url(./images/icons/gift-64.png);
 }
 .flaticon-quality {
-  background-image: url(../img/icons/quality-64.png);
+  background-image: url(./images/icons/quality-64.png);
 }
 .flaticon-safe {
-  background-image: url(../img/icons/safe-64.png);
+  background-image: url(./images/icons/safe-64.png);
 }
 .flaticon-in-transit {
-  background-image: url(../img/icons/in-transit-64.png);
+  background-image: url(./images/icons/in-transit-64.png);
 }
 .feature .feature-item h3 {
   font-size: 22px;
