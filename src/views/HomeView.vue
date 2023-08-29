@@ -1,5 +1,7 @@
 <script setup>
+  import Carousel from '@/components/cp_home/Carousel.vue'
 </script>
+
 <template>
-  <div class=""></div>
+  <Carousel/>
 </template>
