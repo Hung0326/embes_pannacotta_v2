@@ -8,7 +8,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import '../node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
 
 import 'owl.carousel'
-import '../node_modules/isotope-layout/dist/isotope.pkgd.min.js'
+// import '../node_modules/isotope-layout/dist/isotope.pkgd.min.js'
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 100) {
