@@ -1,22 +1,3 @@
-<script>
-export default {
-  methods: {
-    playOwlCarousel() {
-      $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        dots: true,
-        loop: true,
-        items: 1
-      });
-    }
-  },
-  mounted() {
-    this.playOwlCarousel()
-  }
-}
-
-</script>
 <template>
   <div class="feature">
     <div class="container">
@@ -98,7 +79,7 @@ export default {
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <div class="owl-carousel testimonial-carousel">
+          <div class="owl-carousel testimonial-carousel d-block">
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
               <h4 class="font-weight-light mb-4">Bằng sự tận tâm của mình, EMBEs sẽ cung cấp cho các bạn những chiếc bánh panna cotta ngon, béo mịn và đảm bảo chất lượng ạ! Chân thành cảm ơn các bạn đã ủng hộ EMBEs PannaCotta!</h4>

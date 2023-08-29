@@ -22,22 +22,23 @@
   }
 </script>
 <template>
-  <div class="jumbotron jumbotron-fluid page-header page-header-a mb-0">
-    <div class="container text-center py-5">
-      <h1 class="text-white display-3 mt-lg-5">Hình ảnh</h1>
+  <div class="bg-white">
+    <div class="jumbotron jumbotron-fluid page-header page-header-a mb-0">
+      <div class="container text-center py-5">
+        <h1 class="text-white display-3 mt-lg-5">Hình ảnh</h1>
+      </div>
     </div>
-  </div>
 
-  <div class="container py-3">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Hình ảnh</li>
-      </ol>
-    </nav>
-  </div>
+    <div class="container py-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Hình ảnh</li>
+        </ol>
+      </nav>
+    </div>
 
-  <div class="container pb-2 pt-5">
+    <div class="container pb-2 pt-5">
       <div class="row justify-content-center">
         <div class="col-lg-5">
           <h1 class="section-title position-relative text-center mb-5">Danh mục</h1>
@@ -118,10 +119,5 @@
         <a href="#_17" class="lightbox trans" id="img_17"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/c_7.gif"></a>
       </div>
     </div>
-
+  </div>
 </template>
-<style scope>
-  body {
-    background-color: white;
-  }
-</style>

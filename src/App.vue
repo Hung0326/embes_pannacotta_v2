@@ -74,10 +74,27 @@
   </header>
   <!-- Navbar End -->
 
-  <!-- <HomeView/> -->
-  <keep-alive>
-    <component :is="component" />
-  </keep-alive>
+  <div class="profile__main">
+    <router-view v-slot="{  }">
+      <Transition name="slide-down" mode="out-in">
+        <div v-if="component === 'HomeView'">
+          <HomeView/>
+        </div>
+        <div v-else-if="component === 'ContactView'">
+          <ContactView/>
+        </div>
+        <div v-else-if="component === 'PictureView'">
+          <PictureView/>
+        </div>
+        <div v-else-if="component === 'ProductView'">
+          <ProductView/>
+        </div>
+        <div v-else>
+          <HomeView/>
+        </div>
+      </Transition>
+    </router-view>
+  </div>
   <VFooter/>
 
   <a href="#" @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
@@ -98,3 +115,23 @@
     </div>
   </div>
 </template>
+<style>
+.slide-down-enter-from {
+  transform: translateX(100%);
+}
+.slide-down-leave-to {
+	opacity: 0;
+}
+
+.slide-down-enter-active {
+	transition: .2s ease-out;
+  top: 0;
+}
+.slide-down-leave-active {
+	transition: .1s ease-out;
+}
+
+.slide-down-enter {
+  transform: translate(0, 0);
+}
+</style>

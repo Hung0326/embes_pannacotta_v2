@@ -6,7 +6,7 @@
         t.type = "video/mp4"
         t.src = "/src/assets/images/real/2901376266035646338.mp4"
         t.onerror = ""
-        $('video#f-iv').append(t);
+        document.getElementById('f-iv').appendChild(t);
       }
     }
   }
