@@ -1,11 +1,11 @@
 import './assets/main.css'
+import '../node_modules/jquery/dist/jquery.min.js'
 
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import './lib/jquery-3.4.1.min.js'
-import './lib/bootstrap.bundle.min.js'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 
 const app = createApp(App)
 
