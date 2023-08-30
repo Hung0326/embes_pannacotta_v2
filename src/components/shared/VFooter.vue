@@ -58,5 +58,7 @@
         © <a href="/" class="text-white"><strong>EMBEs</strong>PannaCotta</a> All Right Reserved
       </p>
     </div>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
   </footer>
 </template>

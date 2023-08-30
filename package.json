@@ -12,7 +12,6 @@
   "dependencies": {
     "isotope-layout": "^3.0.6",
     "vue": "^3.3.4",
-    "vue-fb-customer-chat": "^0.2.2",
     "vue-router": "^4.2.4",
     "vue3-carousel": "^0.3.1"
   },
