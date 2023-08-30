@@ -1606,6 +1606,13 @@ h5 {
 .b-ico.call {
   background-image: url(./images/icons/phone.png);
 }
+.b-ico.call-b {
+  background-image: url(./images/icons/phone-48.png);
+}
+
+.b-ico.icontact {
+  background-image: url(./images/icons/icons8-panna-cotta-1.png);
+}
 
 .b-ico.home {
   background-image: url(./images/icons/home.png);
@@ -3163,6 +3170,7 @@ footer .btn {
 footer a svg.bi.bi-tiktok{
   transform: translateY(2px);
 }
+.b-ico.call-b,
 .b-ico.call {
 
   -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
@@ -3194,6 +3202,10 @@ footer a svg.bi.bi-tiktok{
   100% {
       transform: rotate(0) scale(1) skew(1deg)
   }
+}
+
+.navbar-toggler.embes {
+  border: none;
 }
 
 .trans {

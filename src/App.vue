@@ -29,12 +29,19 @@
         this.component = `${name}View`
       },
       scrollTop() {
-        window.scrollTo(0,0)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        })
       },
       toHome() {
         document.querySelector('.nav-item.nav-link.active').classList.remove('active')
         this.component = 'HomeView'
         document.getElementById('Top0106').classList.add('active')
+      },
+      beforeEnter() {
+        window.scrollTo(0,0)
       }
     }
   }
@@ -53,9 +60,6 @@
         <a @click="toHome" class="navbar-brand d-block d-lg-none">
           <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" aria-label="menu" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">
             <a @click="loadComponents('Home', $event)" class="nav-item nav-link active" id="Top0106" role="button">Trang Chủ</a>
@@ -76,7 +80,7 @@
 
   <div class="profile__main">
     <router-view v-slot="{  }">
-      <Transition name="slide-down" mode="out-in">
+      <Transition name="slide-downr" mode="out-in" @before-enter="beforeEnter">
         <div v-if="component === 'HomeView'">
           <HomeView/>
         </div>
@@ -99,9 +103,13 @@
 
   <a href="#" @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
   <div class="bth-navinator">
-    <a href="tel:0931604585" aria-label="phone">
+    <a v-if="component === 'ContactView'" href="tel:0931604585" aria-label="phone">
       <span class="b-ico call"></span>
     </a>
+    <div v-if="component != 'ContactView'" class="btt" aria-label="home" @click="navLoadComponents('Contact')">
+      <span v-if="component === 'ContactView'" class="b-ico home-active"></span>
+      <span v-else class="b-ico icontact"></span>
+    </div>
     <div class="btt" aria-label="home" @click="navLoadComponents('Home')">
       <span v-if="component === 'HomeView'" class="b-ico home-active"></span>
       <span v-else class="b-ico home"></span>
@@ -133,5 +141,22 @@
 
 .slide-down-enter {
   transform: translate(0, 0);
+}
+
+.slide-downr-enter-from {
+	opacity: 0;
+	transform: translateY(0px);
+  position: relative;
+  top: 0;
+}
+
+.slide-downr-leave-to {
+	opacity: 0;
+	transform: translateY(200px);
+}
+
+.slide-downr-enter-active,
+.slide-downr-leave-active {
+	transition: 0.25s ease-out;
 }
 </style>
