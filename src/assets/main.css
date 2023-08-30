@@ -1621,7 +1621,9 @@ h5 {
 .b-ico.icontact {
   background-image: url(./images/icons/icons8-panna-cotta-1.png);
 }
-
+.b-ico.icontact64 {
+  background-image: url(./images/icons/panna-cotta-64.png);
+}
 .b-ico.home {
   background-image: url(./images/icons/home.png);
 }
@@ -3242,7 +3244,7 @@ footer a svg.bi.bi-tiktok{
 	height: 200px;
 	overflow: hidden;
   padding: 4px;
-  transition: .3s;
+  /* transition: .3s; */
 }
 
 .top ul li:before {
@@ -3362,4 +3364,8 @@ h2.logo {
   -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
   -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
   animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+}
+
+.hide {
+  visibility: hidden;
 }

@@ -13,6 +13,7 @@ export default {
       this.portfolioIsotope = new Isotope( grid, {
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows',
+        percentPosition: true,
         filter: '*'
       });
     },
@@ -137,5 +138,6 @@ export default {
   transform:translate3d(0,0,0);
   -webkit-transform:translate3d(0,0,0);
   -moz-transform:translate3d(0,0,0);
+  transition:  opacity 0.3s, background-color 0.25s linear, border-color 0.25s linear;
 }
 </style>
