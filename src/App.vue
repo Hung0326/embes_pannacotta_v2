@@ -101,7 +101,7 @@
   </div>
   <VFooter/>
 
-  <a href="#" @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
+  <a @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
   <div class="bth-navinator">
     <a v-if="component === 'ContactView'" href="tel:0931604585" aria-label="phone">
       <span class="b-ico call"></span>

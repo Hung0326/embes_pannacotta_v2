@@ -2998,18 +2998,21 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   }
 
   body {
-    margin-top: 58px;
+    margin-top: 53px;
   }
 
   .feature-text p {
     display: none;
   }
 }
-
-.contact_1 {
-  background-color: white;
+@media (min-width: 992px) { 
+  .carousel {
+    margin-top: -43px;
+  }
+  .contact_1 {
+    background-color: white;
+  }
 }
-
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
