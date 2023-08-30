@@ -1,9 +1,33 @@
 <script>
-import isotope from 'vueisotope'
+import Isotope from 'isotope-layout'
 
 export default {
-  components: {
-    isotope
+  data() {
+    return {
+      portfolioIsotope: null,      
+    };
+  },
+  methods: {
+    initIsotope() {
+      var grid = document.querySelector('.portfolio-container');
+      this.portfolioIsotope = new Isotope( grid, {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows',
+        filter: '*'
+      });
+    },
+    filterImg(target) {
+      const currentTarget = target.currentTarget
+      const allTargets = document.querySelectorAll('#portfolio-flters li')
+      allTargets.forEach(item => { item.classList.remove('active') })
+      currentTarget.classList.add('active');
+      this.portfolioIsotope.arrange({
+        filter: currentTarget.dataset.filter
+      });
+    }
+  },
+  mounted() {
+    this.initIsotope()
   }
 }
 </script>
@@ -33,18 +57,19 @@ export default {
       <div class="row">
         <div class="col-12 text-center">
           <ul class="list-inline mb-4 pb-2" id="portfolio-flters">
-            <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">Tất cả</li>
-            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".str">Dâu tây</li>
-            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".raspberry">Phúc Bồn Tử</li>
-            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".pas">Chanh dây</li>
-            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".kiwi">Kiwi</li>
+            <li @click="filterImg($event)" class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">Tất cả</li>
+            <li @click="filterImg($event)" class="btn btn-sm btn-outline-primary m-1" data-filter=".str">Dâu tây</li>
+            <li @click="filterImg($event)" class="btn btn-sm btn-outline-primary m-1" data-filter=".raspberry">Phúc Bồn Tử</li>
+            <li @click="filterImg($event)" class="btn btn-sm btn-outline-primary m-1" data-filter=".pas">Chanh dây</li>
+            <li @click="filterImg($event)" class="btn btn-sm btn-outline-primary m-1" data-filter=".kiwi">Kiwi</li>
           </ul>
         </div>
       </div>
       <div class="top d-flex">
-        <isotope class="portfolio-container" data-isotope='{ "itemSelector": ".portfolio-item", "layoutMode": "fitRows", "filter": "[data-filter]" }'>
+        <ul class="portfolio-container">
           <li class="portfolio-item raspberry">
-              <a href="#img_3"><img src="/src/assets/images/real/b_5.jpg" alt="EMBEs Pannacotta"></a></li>
+              <a href="#img_3"><img src="/src/assets/images/real/b_5.jpg" alt="EMBEs Pannacotta"></a>
+          </li>
           <li class="portfolio-item second">
               <a href="#img_4"><img src="/src/assets/images/real/b_2.jpg" alt="EMBEs Pannacotta"></a>
           </li>
@@ -87,7 +112,7 @@ export default {
           <li class="portfolio-item pas">
               <a href="#img_17"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/c_7.gif"></a>
           </li>
-        </isotope>
+        </ul>
         <a href="#_3" class="lightbox trans" id="img_3"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/b_5.jpg"></a>
         <a href="#_4" class="lightbox trans" id="img_4"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/b_2.jpg"></a>
         <a href="#_5" class="lightbox trans" id="img_5"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/b_3.jpg"></a>
@@ -107,3 +132,10 @@ export default {
     </div>
   </div>
 </template>
+<style>
+.portfolio-item {
+  transform:translate3d(0,0,0);
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
+}
+</style>
