@@ -1256,12 +1256,20 @@ h5 {
 
 .back-to-top {
   position: fixed;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
   right: 30px;
   bottom: 30px;
   z-index: 11;
+  transition: .4s;
 }
 
+.back-to-top.show{
+  visibility: visible;
+  transition: .4s;
+  opacity: 1;
+}
 .nav-bar::before {
   position: absolute;
   content: "";
@@ -3330,4 +3338,28 @@ footer a svg.bi.bi-tiktok{
 
 .border-right {
   border-right: 1px solid #dee2e6 !important;
+}
+
+.text-x {
+  transform: translateX(-220%);
+  display: inline-block;
+}
+
+.text-x.show {
+  transition: .4s;
+  transform: translateX(0);
+}
+
+h2.logo {
+  overflow: hidden;
+}
+
+.text-z.show {
+  display: inline-block;
+  transform: scale(0.5);
+  -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
 }

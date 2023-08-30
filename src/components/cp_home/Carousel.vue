@@ -53,7 +53,6 @@ export default {
     
     <template #addons>
       <Navigation />
-      <Pagination />
     </template>
   </Carousel>
 </template>
@@ -62,7 +61,9 @@ export default {
   width: 100%;
   max-height: 600px;
 }
-
+.carousel__item img {
+  aspect-ratio: 16/9;
+}
 .carousel__prev, .carousel__next {
   color: white;
   outline: none !important;;

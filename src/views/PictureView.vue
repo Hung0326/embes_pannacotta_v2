@@ -1,25 +1,11 @@
 <script>
-  export default {
-    name: "app",
-    methods: {
-      playIsotope() {
-        // var portfolioIsotope = $('.portfolio-container').isotope({
-        //   itemSelector: '.portfolio-item',
-        //   layoutMode: 'fitRows'
-        // });
-  
-        // $('#portfolio-flters li').on('click', function () {
-        //   $("#portfolio-flters li").removeClass('active');
-        //   $(this).addClass('active');
-    
-        //   portfolioIsotope.isotope({filter: $(this).data('filter')});
-        // });
-      }
-    },
-    mounted() {
-      this.playIsotope()
-    }
+import isotope from 'vueisotope'
+
+export default {
+  components: {
+    isotope
   }
+}
 </script>
 <template>
   <div class="bg-white">
@@ -56,7 +42,7 @@
         </div>
       </div>
       <div class="top d-flex">
-        <ul class="portfolio-container" data-isotope='{ "itemSelector": ".portfolio-item", "layoutMode": "fitRows", "filter": "[data-filter]" }'>
+        <isotope class="portfolio-container" data-isotope='{ "itemSelector": ".portfolio-item", "layoutMode": "fitRows", "filter": "[data-filter]" }'>
           <li class="portfolio-item raspberry">
               <a href="#img_3"><img src="/src/assets/images/real/b_5.jpg" alt="EMBEs Pannacotta"></a></li>
           <li class="portfolio-item second">
@@ -101,7 +87,7 @@
           <li class="portfolio-item pas">
               <a href="#img_17"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/c_7.gif"></a>
           </li>
-        </ul>
+        </isotope>
         <a href="#_3" class="lightbox trans" id="img_3"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/b_5.jpg"></a>
         <a href="#_4" class="lightbox trans" id="img_4"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/b_2.jpg"></a>
         <a href="#_5" class="lightbox trans" id="img_5"><img loading="lazy" alt="EMBEs Pannacotta" src="/src/assets/images/real/b_3.jpg"></a>

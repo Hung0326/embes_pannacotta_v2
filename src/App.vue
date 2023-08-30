@@ -42,8 +42,37 @@
       },
       beforeEnter() {
         window.scrollTo(0,0)
+      },
+      animateLogo() {
+        setTimeout(()=> {
+          document.querySelector('.text-x').classList.add('show')
+          document.querySelector('.text-z').classList.remove('show')
+        }, 1500)
+
+        setInterval(() => {
+          document.querySelector('.text-z').classList.add('show')
+          setTimeout(() => {
+            document.querySelector('.text-z').classList.remove('show')
+          }, 1000);
+        }, 5000);
+      },
+      showBTT() {
+        let btt = document.querySelector(".back-to-top");
+
+        window.addEventListener("scroll", () => {
+          var y = window.scrollY;
+            if (y >= 300) {
+              btt.classList.add('show')
+            } else {
+              btt.classList.remove('show')
+            }
+        });
       }
-    }
+    },
+    mounted() {
+      this.animateLogo()
+      this.showBTT()
+    },
   }
 
 </script>
@@ -58,7 +87,7 @@
     <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
       <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0 navbar_v2">
         <a @click="toHome" class="navbar-brand d-block d-lg-none">
-          <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
+          <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary bg-white text-z show">EMBEs</span><span class="text-x">PannaCollta</span></h2>
         </a>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">

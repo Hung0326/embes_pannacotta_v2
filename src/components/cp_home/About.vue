@@ -3,10 +3,12 @@
     methods: {
       loadVid(el) {
         const t = el.currentTarget
-        t.type = "video/mp4"
-        t.src = "/src/assets/images/real/2901376266035646338.mp4"
-        t.onerror = ""
-        document.getElementById('f-iv').appendChild(t);
+        let sourceEl = document.createElement("source", { type: "video/mp4", src: "/src/assets/images/real/2901376266035646338.mp4", onerror: '' });
+
+        // t.type = "video/mp4"
+        // t.src = "/src/assets/images/real/2901376266035646338.mp4"
+        // t.onerror = ""
+        document.getElementById('f-iv').appendChild(sourceEl);
       }
     }
   }
@@ -28,7 +30,8 @@
               <div class="col-lg-4" style="min-height: 400px;">
                 <div class="position-relative h-100 f-iv overflow-hidden">
                   <video id="f-iv" frameborder="0" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" defaultMuted>
-                    <source loading="lazy" src="/src/assets/images/real/2901376266035646338.webm" type="video/webm" @error="loadVid($event)">
+                    <source loading="lazy" src="/src/assets/images/real/2901376266035646338.webm" type="video/webm">
+                    <source loading="lazy" src="/src/assets/images/real/2901376266035646338.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
