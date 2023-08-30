@@ -1620,6 +1620,20 @@ h5 {
 
 .b-ico.icontact {
   background-image: url(./images/icons/icons8-panna-cotta-1.png);
+  transition: .5s;
+  transform-origin: center;
+  animation: zoom .5s ease-out;
+}
+
+.b-ico.icontact.v2 {
+  background-image: url(./images/icons/panna-cotta-64.png);
+  transition: .5s;
+  transform-origin: center;
+  animation: zoom .5s ease-out;
+}
+@keyframes zoom {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
 }
 .b-ico.icontact64 {
   background-image: url(./images/icons/panna-cotta-64.png);

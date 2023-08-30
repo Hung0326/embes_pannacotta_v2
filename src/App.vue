@@ -44,8 +44,6 @@
         window.scrollTo(0,0)
       },
       animateLogo() {
-        let b1 = document.querySelector('.icontact')
-        let b2 = document.querySelector('.icontact64')
         setTimeout(()=> {
           document.querySelector('.text-x').classList.add('show')
           document.querySelector('.text-z').classList.remove('show')
@@ -53,12 +51,12 @@
 
         setInterval(() => {
           document.querySelector('.text-z').classList.add('show')
-          b1.classList.toggle('d-none')
-          b2.classList.toggle('d-none')
           setTimeout(() => {
             document.querySelector('.text-z').classList.remove('show')
           }, 1000);
         }, 5000);
+
+        setInterval(() => { document.querySelector('.icontact').classList.toggle('v2') }, 8000);
       },
       showBTT() {
         let btt = document.querySelector(".back-to-top");
@@ -166,7 +164,7 @@
     </a>
     <div v-if="component != 'ContactView'" class="btt" aria-label="home" @click="navLoadComponents('Contact')">
       <span class="b-ico icontact"></span>
-      <span class="b-ico icontact64 d-none"></span>
+      <!-- <span class="b-ico icontact64"></span> -->
     </div>
     <div class="btt" aria-label="home" @click="navLoadComponents('Home')">
       <span v-if="component === 'HomeView'" class="b-ico home-active"></span>

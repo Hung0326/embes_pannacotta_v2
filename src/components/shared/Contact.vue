@@ -1,5 +1,5 @@
 <template>
-  <div class="contact contact_1">
+  <div class="contact contact_1 bg-white">
     <div class="container">
       <div class="section-header text-center">
         <p>Liên hệ với EMBEs</p>
