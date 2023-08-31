@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <Carousel :items-to-show="1" :autoplay="3000" :wrap-around="true">
+  <Carousel :items-to-show="1" :autoplay="4500" :wrap-around="true">
     <Slide :key="1">
       <div class="carousel__item active">
         <img class="w-100" src="/src/assets/images/carousel-2.jpg" alt="Panna cotta embes">
