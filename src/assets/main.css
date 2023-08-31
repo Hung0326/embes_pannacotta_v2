@@ -3272,7 +3272,7 @@ h2.logo {
     display: block;
   }
   .bth-navinator { padding: 0 3px; }
-  .bth-navinator .btt { padding: 3px; }
+  .bth-navinator .btt, .bth-navinator a { padding: 3px; }
 }
 
 @media (max-width: 415px) {
