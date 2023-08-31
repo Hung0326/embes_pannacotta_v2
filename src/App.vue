@@ -81,20 +81,25 @@
         chatbox.setAttribute("attribution", "biz_inbox");
         
         window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v17.0'
-        });
-      };
-  
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    },
+          FB.init({
+            xfbml            : true,
+            version          : 'v17.0'
+          });
+        };
+    
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      },
+      explainNav() {
+        setTimeout(() => {
+          document.querySelector('.bttl').classList.add('bh')
+        }, 10000);
+      },
     },
     emits: ["goToProductView"],
     mounted() {
@@ -105,6 +110,7 @@
       }
       this.animateLogo()
       this.showBTT()
+      this.explainNav()
     },
   }
 
@@ -182,7 +188,7 @@
     <div class="btt" @click="scrollTop">
       <span class="b-ico top"></span>
     </div>
-    <div class="btt bh">
+    <div class="btt bttl">
       <span class="b-ico mess"></span>
     </div>
   </div>

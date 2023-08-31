@@ -3264,7 +3264,7 @@ h2.logo {
 .hide {
   visibility: hidden;
 }
-.btt.bh {
+.btt:last-child {
   display: none;
 }
 @media (max-width: 450px) {
@@ -3277,6 +3277,6 @@ h2.logo {
 
 @media (max-width: 415px) {
   .btt.bh {
-    padding-left: 20px;
+    padding-left: 22px;
   }
 }
