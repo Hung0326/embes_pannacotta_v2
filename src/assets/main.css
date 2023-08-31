@@ -1615,6 +1615,10 @@ h5 {
 .b-ico.call {
   background-image: url(./images/icons/phone.png);
 }
+.b-ico.mess {
+  background-image: url(./images/icons/message-48.png);
+  background-size: 30px 30px;
+}
 .b-ico.call-b {
   background-image: url(./images/icons/phone-48.png);
 }
@@ -3408,6 +3412,6 @@ h2.logo {
   .btt.bh {
     display: block;
   }
-
+  .bth-navinator { padding: 0 3px; }
   .bth-navinator .btt { padding: 3px; }
 }

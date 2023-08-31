@@ -182,8 +182,8 @@
     <div class="btt" @click="scrollTop">
       <span class="b-ico top"></span>
     </div>
-    <div class="btt bh" @click="scrollTop">
-      <span class="b-ico top"></span>
+    <div class="btt bh">
+      <span class="b-ico mess"></span>
     </div>
   </div>
 </template>
