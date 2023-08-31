@@ -98,7 +98,7 @@
       explainNav() {
         setTimeout(() => {
           document.querySelector('.bttl').classList.add('bh')
-        }, 8000);
+        }, 6000);
       },
     },
     emits: ["goToProductView"],
