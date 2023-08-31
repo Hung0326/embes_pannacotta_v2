@@ -58,6 +58,11 @@
 
         setInterval(() => { document.querySelector('.icontact').classList.toggle('v2') }, 8000);
       },
+      goToProductView() {
+        this.component = 'ProductView'
+        document.querySelector('.nav-item.nav-link.active').classList.remove('active')
+        document.getElementById('Product0106').classList.add('active')
+      },
       showBTT() {
         let btt = document.querySelector(".back-to-top");
 
@@ -119,7 +124,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">
             <a @click="loadComponents('Home', $event)" class="nav-item nav-link active" id="Top0106" role="button">Trang Chủ</a>
-            <a @click="loadComponents('Product', $event)" class="nav-item nav-link" role="button">Sản Phẩm</a>
+            <a @click="loadComponents('Product', $event)" class="nav-item nav-link" id="Product0106" role="button">Sản Phẩm</a>
           </div>
           <a @click="toHome('Home')" class="navbar-brand mx-5 d-none d-lg-block">
             <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
@@ -138,7 +143,7 @@
     <router-view v-slot="{  }">
       <Transition name="slide-downr" mode="out-in" @before-enter="beforeEnter">
         <div v-if="component === 'HomeView'">
-          <HomeView/>
+          <HomeView @click="goToProductView()"/>
         </div>
         <div v-else-if="component === 'ContactView'">
           <ContactView/>
@@ -150,7 +155,7 @@
           <ProductView/>
         </div>
         <div v-else>
-          <HomeView/>
+          <HomeView @click="goToProductView()"/>
         </div>
       </Transition>
     </router-view>

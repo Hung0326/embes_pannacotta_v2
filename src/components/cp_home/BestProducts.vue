@@ -1,13 +1,4 @@
-<script setup>
-  import Carousel from '@/components/cp_home/Carousel.vue'
-  import About from '@/components/cp_home/About.vue'
-  import Testimonial from '@/components/cp_home/Testimonial.vue'
-  import Contact from '@/components/shared/Contact.vue'
-</script>
-
 <template>
-  <Carousel/>
-  <About/>
   <div class="container-fluid pt-5 pb-4 bg-white">
     <div class="container">
       <div class="row">
@@ -38,12 +29,8 @@
       </div>
 
       <div class="col-12 text-center">
-        <button class="btn btn-secondary py-2 px-5 mt-3" v-on:click="this.$emit('click')">Tất cả sản phẩm</button>
+        <button class="btn btn-secondary py-2 px-5 mt-3">Tất cả sản phẩm</button>
       </div>
     </div>
   </div>
-  <Testimonial/>
-  <Contact/>
 </template>
-<script>
-</script>
