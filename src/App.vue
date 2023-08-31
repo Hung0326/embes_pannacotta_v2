@@ -96,6 +96,7 @@
       }(document, 'script', 'facebook-jssdk'));
     },
     },
+    emits: ["goToProductView"],
     mounted() {
       if (typeof FB === "undefined") {
         this.fbInit();
@@ -169,7 +170,6 @@
     </a>
     <div v-if="component != 'ContactView'" class="btt" aria-label="home" @click="navLoadComponents('Contact')">
       <span class="b-ico icontact"></span>
-      <!-- <span class="b-ico icontact64"></span> -->
     </div>
     <div class="btt" aria-label="home" @click="navLoadComponents('Home')">
       <span v-if="component === 'HomeView'" class="b-ico home-active"></span>
