@@ -165,21 +165,24 @@
 
   <a @click="scrollTop" class="btn btn-secondary px-2 back-to-top" style="bottom:80px;"><i class="fa fa-angle-double-up"></i></a>
   <div class="bth-navinator">
-    <a v-if="component === 'ContactView'" href="tel:0931604585" aria-label="phone">
+    <a v-if="component === 'ContactView'" href="tel:0931604585">
       <span class="b-ico call"></span>
     </a>
-    <div v-if="component != 'ContactView'" class="btt" aria-label="home" @click="navLoadComponents('Contact')">
+    <div v-if="component != 'ContactView'" class="btt" @click="navLoadComponents('Contact')">
       <span class="b-ico icontact"></span>
     </div>
-    <div class="btt" aria-label="home" @click="navLoadComponents('Home')">
+    <div class="btt" @click="navLoadComponents('Home')">
       <span v-if="component === 'HomeView'" class="b-ico home-active"></span>
       <span v-else class="b-ico home"></span>
     </div>
-    <div class="btt" aria-label="picture" @click="navLoadComponents('Picture')">
+    <div class="btt" @click="navLoadComponents('Picture')">
       <span v-if="component === 'PictureView'" class="b-ico picture-active"></span>
       <span v-else class="b-ico picture"></span>
     </div>
     <div class="btt" @click="scrollTop">
+      <span class="b-ico top"></span>
+    </div>
+    <div class="btt bh" @click="scrollTop">
       <span class="b-ico top"></span>
     </div>
   </div>

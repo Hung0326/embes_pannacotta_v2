@@ -2879,7 +2879,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .feature {
   position: relative;
   width: 100%;
-  padding: 45px 0;
+  padding: 60px 0;
   background-color: white;
   z-index: 1;
 }
@@ -2914,6 +2914,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .feature .feature-img img {
   width: 100%;
   transition: .3s;
+  object-fit: cover;
 }
 
 .feature .feature-img img:hover {
@@ -3399,4 +3400,14 @@ h2.logo {
 
 .hide {
   visibility: hidden;
+}
+.btt.bh {
+  display: none;
+}
+@media (max-width: 450px) {
+  .btt.bh {
+    display: block;
+  }
+
+  .bth-navinator .btt { padding: 3px; }
 }

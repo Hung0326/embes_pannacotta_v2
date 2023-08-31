@@ -11,22 +11,19 @@
                   <div class="feature-img">
                       <div class="row">
                           <div class="col-6">
-                              <img loading="lazy" src="/src/assets/images/real/b_5.jpg" alt="Panna Cotta">
+                              <img loading="lazy" width="250px" height="198px" src="/src/assets/images/pas.jpg" alt="Panna Cotta">
                           </div>
                           <div class="col-6">
-                              <img loading="lazy" src="/src/assets/images/real/b_6.jpg" alt="Panna Cotta">
+                              <img loading="lazy" width="250px" height="198px" src="/src/assets/images/real/b_6.jpg" alt="Panna Cotta">
                           </div>
                           <div class="col-6">
-                              <img loading="lazy" src="/src/assets/images/real/b_2.jpg" alt="Panna Cotta">
+                              <img loading="lazy" width="250px" height="198px" src="/src/assets/images/real/b_2.jpg" alt="Panna Cotta">
                           </div>
                           <div class="col-6">
-                              <img loading="lazy" src="/src/assets/images/real/b_3.jpg" alt="Panna Cotta">
+                              <img loading="lazy" width="250px" height="198px" src="/src/assets/images/kiwi.jpg" alt="Panna Cotta">
                           </div>
                       </div>
                   </div>
-                  <p>
-                    Trên đây là những hình ảnh Pannacotta thưc tế của EMBEs. Bạn có thể xem thêm hình ảnh thực tế của những chiếc bánh Pannacotta <a target="_blank" href="/hinh-anh.html">tại đây</a>.
-                  </p>
                 </div>
             </div>
             <div class="col-lg-7 pt-5">

@@ -24,7 +24,7 @@
           <div class="row">
               <div class="col-lg-4 py-4">
                   <h1 class="font-weight-bold mb-3">Panna Cotta là gì?</h1>
-                  <h5 class="text-muted mb-3">Panna Cotta là một món tráng miệng ngọt ngào đến từ đất nước Italia và đã chinh phục vị giác thực khách khắp thế giới.</h5>
+                  <h4 class="text-muted mb-3">Panna Cotta là một món tráng miệng ngọt ngào đến từ đất nước Italia và đã chinh phục vị giác thực khách khắp thế giới.</h4>
                   <p>Panna Cotta (trong tiếng Italia nghĩa là kem nấu) là một món tráng miệng nấu kem, sữa và đường với bột thạch rồi đợi cho hỗn hợp đông lại. Công thức đầu tiên của Panna Cotta được bắt nguồn ở miền Bắc nước Italia, khi người ta đem làm đông kem sữa với xương cá (collagen trong xương cá sẽ làm đông đặc kem) và thưởng thức. Ngày nay, người ta thường dùng gelatin để chế biến Panna Cotta, cho ra món bánh có kết cấu mịn màng, tan nhẹ trong miệng. Ngoài ra, bạn cũng có thể tăng hương vị bằng các loại trái cây, nước sốt cho món Panna Cotta thêm phần hấp dẫn.</p>
               </div>
               <div class="col-lg-4" style="min-height: 400px;">

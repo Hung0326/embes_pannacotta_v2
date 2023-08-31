@@ -41,7 +41,7 @@ export default {
 
     <Slide :key="1">
       <div class="carousel__item active">
-        <img class="w-100" src="/src/assets/images/carousel-1.jpg" alt="Panna Cotta">
+        <img class="w-100" loading="lazy" src="/src/assets/images/carousel-1.jpg" alt="Panna Cotta">
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
             <h2 class="display-3 text-white mb-md-4">Panna Cotta</h2>
