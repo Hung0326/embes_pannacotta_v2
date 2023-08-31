@@ -19,7 +19,7 @@
         <div class="col-md-6 col-lg-3 bg-light px-2 mb-3">
           <div class="product-item-v2">
             <div class="product-item-v2-img best">
-              <img loading="lazy" src="/src/assets/images/real/c_1.jpg" alt="Pannacotta Phúc Bồn Tử" class="pi-v2">
+              <img loading="lazy" src="/src/assets/images/raspberry.jpg" alt="Pannacotta Phúc Bồn Tử" class="pi-v2">
               <div class="product-item-v2-price">11.000</div>
             </div>
             <div class="product-item-v2-name"><strong>Vị Phúc Bồn Tử</strong></div>
@@ -29,7 +29,7 @@
         <div class="col-md-6 col-lg-3 bg-light px-2 mb-3">
           <div class="product-item-v2">
             <div class="product-item-v2-img best">
-              <img loading="lazy" src="/src/assets/images/real/b1.jpg" alt="Pannacotta Chanh Dây" class="pi-v2">
+              <img loading="lazy" src="/src/assets/images/pas.jpg" alt="Pannacotta Chanh Dây" class="pi-v2">
               <div class="product-item-v2-price">11.000</div>
             </div>
             <div class="product-item-v2-name"><strong>Vị Chanh Dây</strong></div>
