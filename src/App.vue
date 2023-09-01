@@ -96,9 +96,15 @@
         }(document, 'script', 'facebook-jssdk'));
       },
       explainNav() {
-        setTimeout(() => {
-          document.querySelector('.bttl').classList.add('bh')
-        }, 6000);
+        const detectFbChat = setInterval(() => {
+          if (document.querySelector('.fb_dialog.fb_dialog_advanced')) {
+            document.querySelector('.bttl').classList.add('bh')
+          }
+        }, 1000)
+  
+        if (document.querySelector('.fb_dialog.fb_dialog_advanced')) {
+          clearInterval(detectFbChat)
+        }
       },
     },
     emits: ["goToProductView"],
