@@ -107,14 +107,14 @@
     },
     emits: ["goToProductView"],
     mounted() {
+      this.animateLogo()
+      this.showBTT()
+      this.explainNav()
       if (typeof FB === "undefined") {
         this.fbInit();
       } else {
         window.FB.XFBML.parse();
       }
-      this.animateLogo()
-      this.showBTT()
-      this.explainNav()
     },
   }
 
