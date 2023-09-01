@@ -97,7 +97,7 @@
       },
       explainNav() {
         const detectFbChat = setInterval(() => {
-          if (document.querySelector('.label-container')) {
+          if (document.querySelector('.fb_dialog_content')) {
             document.querySelector('.bttl').classList.add('bh')
             clearInterval(detectFbChat)
           }
