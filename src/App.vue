@@ -100,7 +100,7 @@
           if (document.querySelector('.fb_dialog_content')) {
             document.querySelector('.bttl').classList.add('bh')
           }
-        }, 500)
+        }, 200)
   
         if (document.querySelector('.fb_dialog_content')) { clearInterval(detectFbChat) }
       },
