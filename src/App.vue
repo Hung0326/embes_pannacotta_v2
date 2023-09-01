@@ -97,12 +97,11 @@
       },
       explainNav() {
         const detectFbChat = setInterval(() => {
-          if (document.querySelector('.fb_dialog_content')) {
+          if (document.querySelector('#fb-root')?.innerHTML) {
             document.querySelector('.bttl').classList.add('bh')
+            clearInterval(detectFbChat)
           }
         }, 200)
-  
-        if (document.querySelector('.fb_dialog_content')) { clearInterval(detectFbChat) }
       },
     },
     emits: ["goToProductView"],
