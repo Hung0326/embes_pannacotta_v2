@@ -128,7 +128,7 @@
   <header class="container-fluid position-relative nav-bar p-0">
     <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
       <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0 navbar_v2">
-        <a @click="toHome" class="navbar-brand d-block d-lg-none">
+        <a href="https://pannacottaembes.shop/" title="EMBEs PannaCollta" rel="home" class="navbar-brand d-block d-lg-none">
           <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary bg-white text-z show">EMBEs</span><span class="text-x">PannaCollta</span></h2>
         </a>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
