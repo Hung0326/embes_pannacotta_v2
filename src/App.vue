@@ -136,7 +136,7 @@
             <a @click="loadComponents('Home', $event)" class="nav-item nav-link active" id="Top0106" role="button">Trang Chủ</a>
             <a @click="loadComponents('Product', $event)" class="nav-item nav-link" id="Product0106" role="button">Sản Phẩm</a>
           </div>
-          <a @click="toHome('Home')" class="navbar-brand mx-5 d-none d-lg-block">
+          <a href="https://pannacottaembes.shop/" title="EMBEs PannaCollta" rel="home" class="navbar-brand mx-5 d-none d-lg-block">
             <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
           </a>
           <div class="navbar-nav mr-auto py-0">
